@@ -1,0 +1,75 @@
+/*Redefinimos los estilos predeterminados*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER Y BARRA DE NAVEGACION*/
+
+/*Le quitamos la decoracion a las etiquetas a*/
+a {
+    text-decoration: none;
+    /*para que paraesca  un amanito cuando pase el mouse*/
+    cursor: pointer;
+}
+
+header {
+    /*Ajustamos el ancho del 100% para que se ajuste automaticamente 
+    y ocupe la totalidad y una altura de 60 px*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    /*utilizaremos displayFlex en el header*/
+    display: flex;
+    justify-content: flex-end;
+    /**/
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    /*auto:Para que tome de formaautomatica la altura del padre(header)*/
+    display: flex;
+    /*Volvems a utilizar display flex*/
+    list-style: none;
+    /*Le quitamos los estilos feos predefinidos de una lista */
+}
+
+/*Separamos los elementos de (Gamil,imagenes, etc)
+*/
+nav .nav-right-section a {
+    margin-right: 10px;
+    color: #000000;
+
+}
+
+/*Agregamos el icono en la barra de navegacion*/
+nav  .nav-right-section .menu-icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');/*Es importnte ponerle las comillas para que la url funcione correctamente*/
+    /*PAra que la imgen no se repita por el espacio qu equeda*/
+    background-repeat: no-repeat;
+    /*Aseguramos el tamaño del icono*/
+    /*para que la imagen quede al centro del div*/
+    background-position: center;
+    /*ppara que la imagen sea del tamaño de mi contenedor*/
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section img{
+    /*Redondeamos las esquinas de ma imagen de perfil*/
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
