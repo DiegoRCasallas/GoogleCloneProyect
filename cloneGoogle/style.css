@@ -73,3 +73,61 @@ nav .nav-right-section img{
     margin-left: 10px;
 }
 
+
+/*Estructura MAIN*/
+main{
+    margin-top: 150px; /*Crea una 
+    distanciade margen superior delmain para que se veamas hacia abajo*/
+    text-align: center;/*Centra elcontenido del main*/
+}
+
+main .main-logo{
+    width: 530px;
+    margin:0 auto;/*Me permite centrar una etiqueta  contenedora */
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+width: 300px;
+}
+
+
+/*Input BARRA DE GOOGLE*/
+
+main .main-input{
+width:530px ;/*Anco del input*/
+margin:0 auto;/*Para que se posiciones en la mitad de la pantalla*/
+margin-bottom: 35px; /*agrandamos la margen
+ de la caja del input para que se separen más los botones*/
+}
+
+/*Contenedodr dentro de un contenedor para manejra mejor lso stilos de este*/
+main .main-input-container{
+width: 525px;
+border-radius: 100px;/*Redondeamos los bordes*/
+border: 1px solid #c8c4c48a;
+display: flex;/*convertinero el contenedor en un dipplay flex*/
+justify-content: center;/*DF:permite acomodar en el centro los elemntos del contenedor*/
+
+}
+
+/*Damos estilo al input, le quitamos lo feo*/
+main .main-input input{
+width: 450px;
+height: 40px;
+border: none;
+outline: none;
+}
+
+/*Pseudoelemnto para efecto de sonbra al container input*/
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447 ;
+    border-color: #dfe1e500;
+}
+
+/*Colocamos iconos del input*/
+
+main .main-input .search-icon{
+    background-image: url('');
+    background-repeat: no-repeat;
+}
