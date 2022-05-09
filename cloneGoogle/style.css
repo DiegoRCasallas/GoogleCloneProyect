@@ -126,8 +126,26 @@ main .main-input-container:hover{
 }
 
 /*Colocamos iconos del input*/
-
 main .main-input .search-icon{
-    background-image: url('');
-    background-repeat: no-repeat;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');/*lo traemos con la url*/
+    background-repeat: no-repeat;/*para que no se repita*/
+    background-position: center;
+    background-size: contain;/**/
+    /*Tenemos que darles posiciones para que se sepa cuantos pixeles debe renderizar*/
+    width: 18px;
+    height: 18px;
+    margin:auto;
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://img2.freepng.es/20180410/prw/kisspng-microphone-google-voice-google-search-google-logo-microphone-5accc7048689d8.1298385515233697325511.jpg');/*lo traemos con la url*/
+    background-repeat: no-repeat;/*para que no se repita*/
+    background-position: center;
+    background-size: contain;/**/
+    /*Tenemos que darles posiciones para que se sepa cuantos pixeles debe renderizar*/
+    width: 18px;
+    height: 18px;
+    cursor:pointer;
+    align-items: center;
+    margin: auto;
 }
