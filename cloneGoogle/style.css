@@ -149,3 +149,69 @@ main .main-input .micro-icon{
     align-items: center;
     margin: auto;
 }
+
+/*ESTILOS a LOS BOTONES DE DEBAJODEL INPUT*/
+/*Le damos  el ancho al contenedor */
+main .main-buttons {
+    width:530px;
+    margin: 0 auto; /*para posicionar en el centro los divs dentro del section */
+}
+/*hacemos qeu los botones se posiciones  de manera consecutiva*/
+main .main-buttons div{
+    display: inline-block;
+   
+
+}
+
+main .main-buttons button{
+height: 36px;/*Damos altura alos botones*/
+
+background-color: #f2f2f2;
+border:0;/*Quitamosbordes*/
+font-size: 14px;
+color: #5f6368;
+border-radius: 5px;
+margin-right:8px;/*Separacion horiszontal de botones*/
+padding:0 15px;
+}
+
+/*Efecto cuando tenemos elcursor encima del boton*/
+main .main-buttons button:hover{
+    border:1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.184);/*Sombra*/
+}
+
+/*FOoter section*/
+footer{
+    width:100%;
+    height: 100px;
+    position:absolute;/*para que se quede abajo*/
+    bottom: 0;/*Ubicamos al final de la pagina*/
+    display:grid;
+    grid-template-columns: 1fr 1fr;/*me permite hacer una
+    cuadricula para manipular mejor nuestros estilos*/
+    align-items: center;
+    font-size: 13px;/*fuente del footer*/
+    background-color: #f2f2f2;
+    border-top-color: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin:10px;
+    list-style: none;/*Reseteamos estilos*/
+    display:flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;/*para que todo el contenido se vaya a la derecha*/
+}
+
+footer .footer-rigth{
+    justify-content: right;
+}
+
+footer ul li a{
+    margin:10px;
+    color:#5f6369;
+}
